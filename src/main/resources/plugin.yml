@@ -1,0 +1,64 @@
+name: tpadialog
+version: 1.3.0
+main: com.zynyhero.tpadialog.TpaDialog
+api-version: "1.21"
+authors: [Zynyhero, Claude]
+description: Solicitud de teletransporte para zpizzasmp
+softdepend: [LuckPerms, floodgate]
+folia-supported: true
+
+# Los comandos (/tpa, /tpask, /tpahere, /tpaccept, /tpdeny, /tpcancel, /tpall, /tpaall, /tpadialog)
+# se registran por código con Brigadier, por eso no aparecen aquí.
+
+# Todos los nodos están declarados aquí, así que LuckPerms los detecta solos (autocompletado en /lp).
+permissions:
+  tpadialog.*:
+    description: Todos los permisos de tpadialog
+    default: op
+    children:
+      tpadialog.use: true
+      tpadialog.admin: true
+  tpadialog.use:
+    description: Comandos de jugador (/tpa, /tpahere, /tpaccept, /tpdeny, /tpcancel)
+    default: true
+    children:
+      tpadialog.tpa: true
+      tpadialog.tpahere: true
+      tpadialog.tpaccept: true
+      tpadialog.tpdeny: true
+      tpadialog.tpcancel: true
+  tpadialog.admin:
+    description: Comandos de admin (/tpall, /tpaall, /tpadialog reload) y ver vanish
+    default: op
+    children:
+      tpadialog.tpall: true
+      tpadialog.tpaall: true
+      tpadialog.reload: true
+      tpadialog.seevanished: true
+  tpadialog.seevanished:
+    description: Ver y elegir a jugadores en vanish en los menús de TPA
+    default: false
+  tpadialog.tpa:
+    description: /tpa
+    default: false
+  tpadialog.tpahere:
+    description: /tpahere
+    default: false
+  tpadialog.tpaccept:
+    description: /tpaccept
+    default: false
+  tpadialog.tpdeny:
+    description: /tpdeny
+    default: false
+  tpadialog.tpcancel:
+    description: /tpcancel
+    default: false
+  tpadialog.tpall:
+    description: /tpall
+    default: false
+  tpadialog.tpaall:
+    description: /tpaall
+    default: false
+  tpadialog.reload:
+    description: /tpadialog reload
+    default: false
