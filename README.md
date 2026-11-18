@@ -2,7 +2,7 @@
 
 > Teleport requests for ZpizzaSMP, built on native in-game dialog menus.
 
-**tpadialog** is a teleport request plugin (TPA) for Minecraft servers. Instead of chest GUIs, it uses the game's native **Dialog screens**, so players pick who to teleport to from a clean menu with player faces, pagination and a search bar.
+**TpaDialog** is a teleport request plugin (TPA) for Minecraft servers. Instead of chest GUIs, it uses the game's native **Dialog screens**, so players pick who to teleport to from a clean menu with player faces, pagination and a search bar.
 
 **Authors:** Zynyhero, Claude
 
@@ -95,7 +95,7 @@ Menu layout: with few players you get a simple one-column list. With more than `
 
 ## Support the project
 
-If you like tpadialog and want to support its development, you can donate on Ko-fi. It's completely optional and very much appreciated. Thank you! ☕
+If you like TpaDialog and want to support its development, you can donate on Ko-fi. It's completely optional and very much appreciated. Thank you! ☕
 
 [![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/zynyhero)
 
